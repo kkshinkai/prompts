@@ -1,4 +1,4 @@
-# Shinkai's Prompts
+# Kk Shinkai's Prompts
 
 ## AGENTS.md
 
