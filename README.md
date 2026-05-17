@@ -11,3 +11,21 @@
 ### AGENTS.md (for TypeScript)
 
 - Do not use inline `import(...)` types. Use top-level `import type` declarations instead.
+
+### AGENTS.md (for Sumink, Web)
+
+Naming Conventions:
+
+- TypeScript names and string literal values must not contain all-caps acronym segments: use `parseJson`, not `parseJSON`.
+- TypeScript string union values use camelCase.
+- CSS custom properties and CSS Module class names use kebab-case.
+- When a CSS Module class is written in kebab-case, TypeScript references it by the corresponding camelCase member.
+- File names use kebab-case across the repo, except fixed conventional names such as `README.md`.
+- Required external names keep their external spelling.
+
+Testing:
+
+- Only add or modify tests that would fail for the specific expected behavior or bug reproduction described in the task; do not add tests based on code structure, nearby examples, coverage goals, UI text, or what seems worth testing.
+- Do not test DOM or React components unless the user explicitly asks for them.
+- Do not assert exact prose; natural-language output is not a stable test target.
+
